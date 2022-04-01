@@ -10,11 +10,10 @@ public class boiteNoireMethode2 {
 
         for (int i=0; i<T.length; i++){
             Double newCurrency = currencyConverter.Currency.convert(T[i], 0.1);
-            assertEquals(newCurrency, T[i]);
-            Double price = T[i] * exchangeValue;
-            price = Math.round(price * 100d) / 100d;
 
-            return price;
+            Double price = T[i] * 0.1;
+            price = Math.round(price * 100d) / 100d;
+            assertEquals(newCurrency, price);
         }
 
     }
