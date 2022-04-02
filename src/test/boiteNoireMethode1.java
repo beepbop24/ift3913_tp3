@@ -13,6 +13,9 @@ public class boiteNoireMethode1 {
 
         for (int i=0; i<T.length; i++){
             Double newCurrency = currencyConverter.MainWindow.convert("US Dollar", T[i], currencies, 1.0);
+            // possiblement que on pourrait mettre en fait : assert que ça ne retourne pas une valeur >=0 dans le cas
+            // ou on veut une erreur. Parce que le but est que le test réussisse, pas fail. Ainsi, il faut mettre
+            //le comportement auquel on s'attend
             assertEquals(newCurrency, result[i]);
         }
 
@@ -26,6 +29,9 @@ public class boiteNoireMethode1 {
 
         for (int i=0; i<T.length; i++){
             Double newCurrency = currencyConverter.MainWindow.convert(T[i], "US Dollar", currencies, 1.0);
+            // possiblement que on pourrait mettre en fait : assert que ça ne retourne pas une valeur >=0 dans le cas
+            // ou on veut une erreur. Parce que le but est que le test réussisse, pas fail. Ainsi, il faut mettre
+            //le comportement auquel on s'attend
             assertEquals(newCurrency, result[i]);
         }
 
@@ -38,6 +44,9 @@ public class boiteNoireMethode1 {
 
         for (int i=0; i<T.length; i++){
             Double newCurrency = currencyConverter.MainWindow.convert("US Dollar", "US Dollar", currencies, T[i]);
+            // possiblement que on pourrait mettre en fait : assert que ça ne retourne pas une valeur >=0 dans le cas
+            // ou on veut une erreur. Parce que le but est que le test réussisse, pas fail. Ainsi, il faut mettre
+            //le comportement auquel on s'attend
             assertEquals(newCurrency, T[i]);
         }
 
