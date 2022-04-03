@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 public class boiteNoireMethode1 {
 
+    /**
+     * Test sur les spécifications de currency1
+     */
     @Test
     void currency1() {
         String[] T = {"US Dollar", "allo"};
@@ -18,6 +21,9 @@ public class boiteNoireMethode1 {
 
     }
 
+    /**
+     * Test sur les spécifications de currency2
+     */
     @Test
     void currency2() {
         String[] T = {"US Dollar", "allo"};
@@ -31,6 +37,9 @@ public class boiteNoireMethode1 {
 
     }
 
+    /**
+     * Test sur les spécifications de amount
+     */
     @Test
     void amount() {
         Double[] T = {-5000.0, -0.1, 0.0, 5000.0, 10000.0, 10000.1, 15000.0};

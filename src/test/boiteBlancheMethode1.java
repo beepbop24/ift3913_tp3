@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class boiteBlancheMethode1 {
+    /**
+     * Test sur les spécifications de la méthode A: Couverture des instructions
+     */
     @Test
     void methodeA() {
         ArrayList<Currency> currencies = Currency.init();
@@ -15,6 +18,9 @@ public class boiteBlancheMethode1 {
         assertEquals(newCurrency, 4650.0);
     }
 
+    /**
+     * Test sur les spécifications de la méthode A: Couverture des arcs du graphe de flot de contrôle
+     */
     @Test
     void methodeB() {
         ArrayList<Currency> currencies = Currency.init();
@@ -29,6 +35,9 @@ public class boiteBlancheMethode1 {
         }
     }
 
+    /**
+     * Test sur les spécifications de la méthode A: Couverture des i-chemins
+     */
     @Test
     void methodeE() {
         ArrayList<Currency> currencies = Currency.init();

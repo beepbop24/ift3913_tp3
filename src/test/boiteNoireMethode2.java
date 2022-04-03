@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import java.util.ArrayList;
 
 public class boiteNoireMethode2 {
+    /**
+     * Test sur les spécifications de amount
+     */
     @Test
     void amount() {
         Double[] T = {-5000.0, -0.1, 0.0, 5000.0, 10000.0, 10000.1, 15000.0};
