@@ -24,7 +24,7 @@ public class boiteNoireMethode2 {
             else {
                 double price = T[i] * 1.0;
                 price = Math.round(price * 100d) / 100d;
-                assertEquals(newCurrency, price);
+                assertEquals(price, newCurrency);
             }
         }
 

@@ -17,7 +17,7 @@ public class boiteNoireMethode1 {
 
         for (int i=0; i<T.length; i++){
             Double newCurrency = currencyConverter.MainWindow.convert(T[i], "US Dollar", currencies, 1.0);
-            assertEquals(newCurrency, result[i]);
+            assertEquals(result[i], newCurrency);
         }
 
     }

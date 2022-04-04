@@ -15,6 +15,6 @@ public class boiteBlancheMethode2 {
         Double[] T = {5000.0, 0.2};
         Double newCurrency = currencyConverter.Currency.convert(T[0], T[1]);
         Double price = Math.round((T[0] * T[1]) * 100d) / 100d;
-        assertEquals(newCurrency, price);
+        assertEquals(price, newCurrency);
     }
 }
