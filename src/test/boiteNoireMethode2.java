@@ -15,14 +15,14 @@ public class boiteNoireMethode2 {
         Double[] T = {-5000.0, -0.1, 0.0, 5000.0, 10000.0, 10000.1, 15000.0};
 
         for (int i=0; i<T.length; i++){
-            Double newCurrency = currencyConverter.Currency.convert(T[i], 0.1);
+            Double newCurrency = currencyConverter.Currency.convert(T[i], 1.0);
 
             if (T[i] > 10000.0 || T[i] < 0) {
                 assertNull(newCurrency);
             }
 
             else {
-                double price = T[i] * 0.1;
+                double price = T[i] * 1.0;
                 price = Math.round(price * 100d) / 100d;
                 assertEquals(newCurrency, price);
             }
