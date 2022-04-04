@@ -1,3 +1,4 @@
+// Catherine Engert et Blanche Mongeon
 import currencyConverter.Currency;
 import org.junit.jupiter.api.Test;
 
